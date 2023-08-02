@@ -1,0 +1,65 @@
+import QtQuick 6.2
+import QtQuick.Controls 6.2
+import Qt.labs.qmlmodels 1.0
+import YunaPlayer
+
+Rectangle {
+    //property alias songList: songList
+
+    width: 900
+    height: 680
+    color: Theme.backgroundColor
+
+    ListModel {
+        id: songItemList
+
+        ListElement {
+            name: "Lion"
+            place: "Africa"
+        }
+        ListElement {
+            name: "Puma"
+            place: "Americas"
+        }
+    }
+    ListModel {
+        id: libraryModel
+
+        ListElement {
+            author: "Gabriel"
+            title: "A Masterpiece"
+        }
+        ListElement {
+            author: "Jens"
+            title: "Brilliance"
+        }
+        ListElement {
+            author: "Frederik"
+            title: "Outstanding"
+        }
+    }
+
+    // ListView {
+    //     id: songList
+    //     anchors.fill: parent
+    //     model: songItemList
+    //     spacing: 0
+    //
+    //     delegate: Button {
+    //         height: 50
+    //         font.pixelSize: 30
+    //         text: name
+    //         anchors {
+    //             left: parent.left
+    //             right: parent.right
+    //             leftMargin: 10
+    //             rightMargin: 10
+    //         }
+    //
+    //         background: Rectangle {
+    //             radius: 0
+    //             color: index%2 === 0 ? Theme.backgroundColor : "grey"
+    //         }
+    //     }
+    // }
+}

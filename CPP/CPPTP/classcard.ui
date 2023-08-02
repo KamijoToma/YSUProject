@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CXXTP::ClassCard</class>
+ <widget class="QWidget" name="CXXTP::ClassCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>218</width>
+    <height>149</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>218</width>
+    <height>149</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ClassCard</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #cfe9d9;
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="classname">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: bold;
+font-size: 20px;</string>
+       </property>
+       <property name="text">
+        <string>李大海的课</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="teachername">
+       <property name="text">
+        <string>李大海</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="classtime">
+         <property name="styleSheet">
+          <string notr="true">padding-left: 0.2em;</string>
+         </property>
+         <property name="text">
+          <string>周一 第一节</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="classroom">
+         <property name="styleSheet">
+          <string notr="true">padding-right: 0.2em;</string>
+         </property>
+         <property name="text">
+          <string>教室1</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="description">
+         <property name="styleSheet">
+          <string notr="true">padding-left: 0.2em;
+padding-right: 0.2em;</string>
+         </property>
+         <property name="text">
+          <string>这是李大海的水课，讲点没什么用的东西
+这是第二行</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="electStatus">
+         <property name="styleSheet">
+          <string notr="true">padding-left: 0.2em;</string>
+         </property>
+         <property name="text">
+          <string>1/100人已选</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="electButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-radius: 0.2em;
+width: 7em;
+background-color: rgb(49, 122, 121);
+color: rgb(255, 255, 255);
+outline: none;
+height: 1.5em;
+}
+QPushButton:disabled{
+background-color: rgb(181, 181, 181);
+}</string>
+         </property>
+         <property name="text">
+          <string>选课</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>electButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CXXTP::ClassCard</receiver>
+   <slot>elect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>elect()</slot>
+ </slots>
+</ui>

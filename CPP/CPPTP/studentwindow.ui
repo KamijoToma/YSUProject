@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>studentwindow</class>
+ <widget class="QWidget" name="studentwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>974</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>studentwindow</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="3,4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4" stretch="2,1">
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget::item {
+	background-color: rgba(138, 248, 198, 128);
+	color: black;
+	border-radius: 0.5em;
+	outline: none;
+	text-align:center;
+}
+
+QTableWidget{
+	text-align: right;
+	outline: none;
+}
+
+QTableWidget::item:alternate {
+	background-color: #c5e8fb;
+}</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideLeft</enum>
+         </property>
+         <property name="verticalScrollMode">
+          <enum>QAbstractItemView::ScrollPerItem</enum>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::NoPen</enum>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderMinimumSectionSize">
+          <number>40</number>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>第一节</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>第二节</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>第三节</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>第四节</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>第五节</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>第六节</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>第七节</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>第八节</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>星期一</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>星期二</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>星期三</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>星期四</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>星期五</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>星期六</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>星期日</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>形势与政策</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>5</pointsize>
+           </font>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="titleLabel">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>学生选课系统</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="3,4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>用户</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="usernameLabel">
+               <property name="text">
+                <string>李大海</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1,1">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="saveButton">
+               <property name="styleSheet">
+                <string notr="true">border-radius: 0.1em;
+height: 1.5em;
+color: #FFFFFF;
+background-color: rgb(49, 122, 121);
+border-width: 0.05em;
+border-style:solid;</string>
+               </property>
+               <property name="text">
+                <string>保存</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="styleSheet">
+                <string notr="true">border-radius: 0.1em;
+height: 1.45em;
+border-color: rgb(49, 122, 121);
+background-color: rgb(255, 255, 255);
+border-width: 0.05em;
+border-style:solid;
+outline: none;</string>
+               </property>
+               <property name="text">
+                <string>清空</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="exitButton">
+               <property name="styleSheet">
+                <string notr="true">border-radius: 0.1em;
+height: 1.45em;
+border-color: rgb(49, 122, 121);
+background-color: rgb(255, 255, 255);
+border-width: 0.05em;
+border-style:solid;
+outline: none;</string>
+               </property>
+               <property name="text">
+                <string>退出</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>540</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2"/>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>studentwindow</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>537</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>clicked()</signal>
+   <receiver>studentwindow</receiver>
+   <slot>saveData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>234</x>
+     <y>471</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>studentwindow</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>studentwindow</receiver>
+   <slot>showMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>535</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clear()</slot>
+  <slot>saveData()</slot>
+  <slot>exit()</slot>
+  <slot>showMenu(QPoint)</slot>
+ </slots>
+</ui>

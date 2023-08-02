@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,3">
+    <item>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <attribute name="headerVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="headerCascadingSectionResizes">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="headerMinimumSectionSize">
+       <number>20</number>
+      </attribute>
+      <attribute name="headerDefaultSectionSize">
+       <number>100</number>
+      </attribute>
+      <attribute name="headerHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="headerShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>课程名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>任课教师</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>教室</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>课程容量</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>开课周</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>开课节</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>课程描述</string>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="text">
+        <string>李大海的课</string>
+       </property>
+       <property name="text">
+        <string>李大海</string>
+       </property>
+       <property name="text">
+        <string>教室1</string>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+       <property name="text">
+        <string>星期二第四节课</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>这是李大海的水课</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="editTab">
+       <attribute name="title">
+        <string>Edit</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="ClassNameLabel">
+            <property name="text">
+             <string>课程名称</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="ClassNameLineEdit">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="nameLabel">
+            <property name="text">
+             <string>任课教师</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="nameLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="sexLabel">
+            <property name="text">
+             <string>教室</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QComboBox" name="classroomComboBox">
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <item>
+             <property name="text">
+              <string>教室1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室7</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室9</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>教室10</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="ClassLimitLabel">
+            <property name="text">
+             <string>课程容量</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QSpinBox" name="ClassLimitSpinBox">
+            <property name="maximum">
+             <number>1000</number>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="ClassTimeLabel">
+            <property name="text">
+             <string>开课时间</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QComboBox" name="ClassWeekCombo">
+              <item>
+               <property name="text">
+                <string>星期一</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>星期二</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>星期三</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>星期四</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>星期五</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>星期六</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>星期日</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="ClassTimeCombo">
+              <item>
+               <property name="text">
+                <string>第一节课</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>第二节课</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>第三节课</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>第四节课</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>第五节课</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>第六节课</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>第七节课</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>第八节课</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="ClassDescLabel">
+            <property name="text">
+             <string>课程描述</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QTextEdit" name="ClassDescEdit"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMinimumSize</enum>
+          </property>
+          <item>
+           <widget class="QPushButton" name="saveButton">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 0.1em;
+width: 7em;
+height: 1.5em;
+color: #FFFFFF;
+background-color: rgb(49, 122, 121);
+border-width: 0.05em;
+border-style:solid;</string>
+            </property>
+            <property name="text">
+             <string>保存</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clearButton">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 0.1em;
+height: 1.45em;
+border-color: rgb(49, 122, 121);
+background-color: rgb(255, 255, 255);
+border-width: 0.05em;
+border-style:solid;
+outline: none;</string>
+            </property>
+            <property name="text">
+             <string>清空</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="searchTab">
+       <attribute name="title">
+        <string>Search</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QCheckBox" name="classnamecheckBox">
+                <property name="text">
+                 <string>课程名称</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="classnamelineEdit"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QCheckBox" name="teachernamecheckBox">
+                <property name="text">
+                 <string>开课教师</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="teachernameEdit"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QCheckBox" name="timeCheckBox">
+                <property name="text">
+                 <string>开课时间</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="weekComboBox">
+                <item>
+                 <property name="text">
+                  <string>任意</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>星期一</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>星期二</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>星期三</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>星期四</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>星期五</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>星期六</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>星期日</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="weekComboBox_2">
+                <item>
+                 <property name="text">
+                  <string>任意</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>第一节</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>第二节</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>第三节</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>第四节</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>第五节</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>第六节</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>第七节</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>第八节</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QCheckBox" name="classroomCheckBox">
+              <property name="text">
+               <string>教室</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="classroomComboBox_2">
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>教室1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>教室10</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchButton">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 0.1em;
+width: 7em;
+height: 1.5em;
+color: #FFFFFF;
+background-color: rgb(49, 122, 121);
+border-width: 0.05em;
+border-style:solid;</string>
+            </property>
+            <property name="text">
+             <string>搜索</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchClearButton">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 0.1em;
+height: 1.45em;
+border-color: rgb(49, 122, 121);
+background-color: rgb(255, 255, 255);
+border-width: 0.05em;
+border-style:solid;
+outline: none;</string>
+            </property>
+            <property name="text">
+             <string>清空</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>775</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuQt">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionRecent"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <addaction name="menuQt"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionRecent">
+   <property name="text">
+    <string>Recent</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>aboutSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>contextMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>158</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>edit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>268</x>
+     <y>414</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>addData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>596</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>596</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clearInput()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>685</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>693</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>570</x>
+     <y>390</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchClearButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>searchClear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>628</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>644</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ClassNameLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>saveButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>547</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nameLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>saveButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>576</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotCatch()</slot>
+  <slot>aboutSlot()</slot>
+  <slot>fillExampleData()</slot>
+  <slot>addData()</slot>
+  <slot>clearData()</slot>
+  <slot>testA()</slot>
+  <slot>clearInput()</slot>
+  <slot>saveData()</slot>
+  <slot>contextMenu(QPoint)</slot>
+  <slot>edit()</slot>
+  <slot>search()</slot>
+  <slot>searchClear()</slot>
+ </slots>
+</ui>
